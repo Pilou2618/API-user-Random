@@ -31,7 +31,7 @@ fetch( endPoint )
                     datas.results.forEach(
                         (data) => {
                                 getWeatherData(data).then(weatherData => {
-                                    tableau.appendchild(addLine(data, weatherData));
+                                    addLine(data, weatherData);
                             });
                         }
                     );
