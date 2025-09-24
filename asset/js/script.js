@@ -13,7 +13,7 @@ function getWeatherData(userData) {
     return fetch(weatherUrl).then(response => response.json());
 }
 
-    //Fectch
+    //Fetch
 fetch( endPoint )
 .then(
     function (response){
@@ -31,7 +31,7 @@ fetch( endPoint )
                     datas.results.forEach(
                         (data) => {
                                 getWeatherData(data).then(weatherData => {
-                                    tableau.appendchild(ajouterLigne(data, weatherData));
+                                    tableau.appendchild(addLine(data, weatherData));
                             });
                         }
                     );
@@ -48,7 +48,7 @@ fetch( endPoint )
 /** * Ajouter une ligne dans le tableau
  * @param {Object} datasuser - Objet contenant les données d'un utilisateur
  */
- function ajouterLigne(datasuser, weatherData) { 
+ function addLine(datasuser, weatherData) { 
     // Creation des elements
     let generatedline = document.createElement("tr");
     let tdnom = document.createElement("td");
