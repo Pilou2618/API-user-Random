@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 2px solid #4CAF50; /* Contour principal du tableau */
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50; /* Couleur d'en-tête */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #a3f1a7; /* Couleur des lignes paires */
+}
+
+tr:nth-child(odd) {
+    background-color: #e3e3e3; /* Couleur des lignes impaires modifiée */
+}
+
+tr:hover {
+    background-color: #61d1f3; /* Couleur au survol */
+    cursor: pointer;
+}
+
+img {
+    border-radius: 50%; /* Pour rendre l'image circulaire */
+    width: 80px; /* Largeur de l'image */
+    height: 80px; /* Hauteur de l'image */
+}
